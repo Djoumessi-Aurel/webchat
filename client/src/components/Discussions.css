@@ -1,0 +1,62 @@
+/* Ce css agit à la fois sur le composant Discussion et sur le composant Contacts */
+
+.fenetre-discussions{
+    z-index: 102;
+}
+.fenetre-contacts{
+    z-index: 104;
+}
+
+.fenetre-discussions, .fenetre-contacts{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-liste{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    background-color: var(--main-background-color);
+    color: white;
+    font-size: larger;
+    user-select: none;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.titre-liste img{
+    width: 22px;
+    height: 22px;
+    margin: 2px 4px 0px 4px;
+    border: 1px solid var(--main-background-color);
+}
+
+.titre-liste img:hover{
+    border: 1px solid red;
+}
+
+.liste-discussions, .liste-contacts{
+    overflow: auto;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: calc(var(--hauteur2-chat-window) - var(--hauteur-chat-header));
+}
+
+img.affiche-contacts{
+    z-index: 104;    
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

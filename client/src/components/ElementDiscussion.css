@@ -1,0 +1,83 @@
+/* Ce css agit à la fois sur le composant ElementDiscussion et sur le composant ElementContact */
+
+.elementDiscussion, .elementContact{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px;
+}
+
+.elementDiscussion:hover, .elementContact:hover{
+    border-left: 2px solid var(--main-background-color);
+}
+
+.elementDiscussion .haut, .elementContact .haut{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed burlywood;
+}
+
+.elementDiscussion .nom, .elementContact .nom{
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* On met les pointillés si le texte est trop long */
+}
+
+.elementDiscussion .date, .elementContact .vu_le{
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.elementDiscussion .bas{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.elementDiscussion .bas1{
+    display: flex;
+    width: 87%;
+}
+
+.elementContact .bas{
+    font-style: italic;
+    font-family: "Bell MT";
+}
+
+.elementDiscussion .accuse{
+   
+    color: var(--main-background-color); font-weight: bold;
+}
+
+.elementDiscussion .nb_non_lus{ 
+    flex-basis: 9%;
+    border: 2px solid var(--main-background-color);
+    color: var(--main-background-color);
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.elementDiscussion .nb_non_lus.hidden{display: none;}
+
+.elementDiscussion .extrait, .elementContact .presentation
+{ /* Les 2 propriétés suivantes sont nécessaires pour le text-overflow */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.elementDiscussion .extrait{
+    /* flex-basis: 87%; */
+    padding-top: 3px;
+}
+
+.bulle-online{
+    width: 10px; height: 10px; border-radius: 50%; background-color: var(--main-background-color);
+}

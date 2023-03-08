@@ -1,0 +1,53 @@
+:root{
+    --settings-background-color: rgb(200, 243, 229);
+  }
+
+.zone-reglages{
+    background-color: var(--settings-background-color);
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 110;
+    color: --color;
+}
+
+.un-reglage{
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+.zone-reglages select{
+    min-width:90px;
+    min-height: 30px;
+}
+
+.en-tete-reglages{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.en-tete-reglages .titre{
+    font-weight: 900;
+    height: 20px;
+}
+
+.en-tete-reglages .fermer{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--settings-background-color);
+    font-weight: bold;
+    text-align: center;
+    display:grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.en-tete-reglages .fermer:hover{
+    border: 1px solid red;
+    color: red;
+}

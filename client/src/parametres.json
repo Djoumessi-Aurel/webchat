@@ -1,0 +1,27 @@
+{
+ "urlLancement": "https://192.168.43.38",
+ "portClient": 3000,
+ "portServeur": 8901,
+ 
+ "MesTextes": {
+      "typeBox" : {"fr": "Ecrivez ici...", "en": "Type your message here"},
+      "online" : {"fr": "en ligne", "en": "online"},
+      "videoCall" : {"fr": "Appel vidéo", "en": "Video call"},
+      "audioCall" : {"fr": "Appel audio", "en": "Audio call"},
+      "settings" : {"fr": "Réglages", "en": "Settings"},
+      "closeWindow" : {"fr": "Fermer la fenêtre", "en": "Close the window"},
+      "openWindow" : {"fr": "Ouvrir la fenêtre de discussion", "en": "Open the chat window"},
+      "showContacts" : {"fr": "Ouvrir la liste des contacts", "en": "Open the contact list"},
+      "chats" : {"fr": "Discussions", "en": "Chats"},
+      "users" : {"fr": "Utilisateurs", "en": "Users"},
+      "language": {"fr": "Langue", "en": "Language"},
+      "dataUnits":{"fr": ["octets", "Ko", "Mo", "Go", "To", "Po", "Eo", "Zo", "Yo"], 
+                  "en": ["bytes", "Kb", "Mb", "Gb", "Tb", "Pb", "Eb", "Zb", "Yb"]
+                },
+      "recordVoice": {"fr": "Enregistrer un message vocal", "en": "Record a voice note"},
+      "sendVoice": {"fr": "Envoyer en envoyer", "en": "Save and send"},
+      "deleteVoice": {"fr": "Annuler le message vocal", "en": "Cancel the voice note"},
+      "messageVoice": {"fr": "[# Message vocal #]", "en": "[# Voice note #]"},
+      "messageFile": {"fr": "[# Fichier #]", "en": "[# File #]"}
+    }
+}
