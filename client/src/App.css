@@ -4,8 +4,10 @@
   --main-background-color: rgb(85, 118, 225);
   --hauteur-chat-header: 40px;
   --hauteur-chat-footer: 40px;
-  --hauteur-chat-window: 400px;
-  --hauteur2-chat-window: 402px;
+  --hauteur-chat-window: 570px;
+  --hauteur2-chat-window: 572px;
+  /* --hauteur-chat-window: 400px;
+  --hauteur2-chat-window: 402px; */
 }
 
 .App {
@@ -73,7 +75,8 @@ input#siofu_input{ /* L'input qui sert à sélectionner les fichiers dkls */
   bottom: 5px;
   margin: 0px;
   z-index: 100;
-  width: 320px;
+  /* width: 320px; */
+  width: 520px;
 }
 
 img.bulle-chat{
@@ -86,7 +89,8 @@ img.bulle-chat{
 }
 
 .chat-window {
-  width: 320px;
+  /* width: 320px; */
+  width: 520px;
   position: relative;
 }
 
@@ -184,7 +188,8 @@ img.bulle-chat{
   width: auto;
   height: auto;
   min-height: 40px;
-  max-width: 170px;
+  /* max-width: 170px; */
+  max-width: 320px;
   min-width: 40px;
   /*background-color: #43a047.*/
   background-color: #8f90e9af;

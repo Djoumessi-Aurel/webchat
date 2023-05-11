@@ -24,7 +24,7 @@ function Chat({socket, room, setRoom, MesTextes}) {
     const [showContacts, setshowContacts] = useState(false);
 
     const [chatVisible, setChatVisible] = useState(false);
-    const [showDiscussions, setshowDiscussions] = useState(true);
+    const [showDiscussions, setshowDiscussions] = useState(false);
     const [showReglages, setshowReglages] = useState(false);
     const [langue, setLangue] = useState("fr");
     const [cookies, setCookie, removeCookie] = useCookies();
@@ -49,7 +49,7 @@ function Chat({socket, room, setRoom, MesTextes}) {
 
             };
 
-            await socket.emit("send_message", messageData);
+            // await socket.emit("send_message", messageData);
             if(!showDiscussions) messageData.readen=true;
             setMessageList((list) => [...list, messageData]);
             setCurrentMessage("");
@@ -255,18 +255,20 @@ function Chat({socket, room, setRoom, MesTextes}) {
         <div className="chat-header">
           <div className='chat-header-left'>
             <div className='fleche-retour'>
-              <img src='../images/fleche-retour.png' alt='-' 
-              onClick={()=>{setshowDiscussions(true);}} />
+              {/* <img src='../images/fleche-retour.png' alt='-' 
+              onClick={()=>{setshowDiscussions(true);}} /> */}
+              <img src='../images/fleche-retour.png' alt='-' />
             </div>
             <div className='info-interlocuteur'>
-              <div className='titre-interlocuteur'>
+              Fine tuned AI
+              {/* <div className='titre-interlocuteur'>
                   {enteteDiscussion.otherUser ? enteteDiscussion.otherUser.name : room}
               </div>
               <div className='details-interlocuteur'>
                 {   enteteDiscussion.otherUser && enteteDiscussion.otherUser.online ? 
                   "(" + MesTextes.online[langue] + ")" : ""
                 }
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='chat-header-right'>
@@ -308,12 +310,12 @@ function Chat({socket, room, setRoom, MesTextes}) {
             }}
             
           />
-          <button className='piece-jointe' onClick={()=>document.getElementById("siofu_input").click()} >
+          {/* <button className='piece-jointe' onClick={()=>document.getElementById("siofu_input").click()} >
             <img src='../images/piece-jointe.png' alt='-' />
           </button>
           <button className='voice' onClick={!voiceRecording? beginRecording : sendRecording} >
            {!voiceRecording? <img src='../images/voice.png' alt='-' /> : <img src='../images/send-voice.png' alt='-' />}
-          </button>
+          </button> */}
           <button onClick={!voiceRecording? sendMessage : deleteRecording} >
             {!voiceRecording? <img src='../images/send.png' alt='-' /> : <img src='../images/delete-voice.png' alt='-' />}
           </button>

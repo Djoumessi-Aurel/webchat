@@ -11,6 +11,7 @@
     "js-cookie": "^3.0.1",
     "mic-recorder-to-mp3": "^2.2.2",
     "moment": "^2.29.4",
+    "openai": "^3.2.1",
     "react": "^17.0.2",
     "react-cookie": "^4.1.1",
     "react-dom": "^17.0.2",
@@ -20,6 +21,7 @@
     "socket.io-client": "^4.4.1",
     "socketio-file-upload": "^0.7.3",
     "terser": "^5.13.0",
+    "unique-names-generator": "^4.7.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
